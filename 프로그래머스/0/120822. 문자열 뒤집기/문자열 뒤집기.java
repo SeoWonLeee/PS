@@ -6,7 +6,7 @@ class Solution {
         sb.append(my_string);
         sb.reverse();
         
-        answer += sb;
+        answer = sb.toString();
         return answer;
     }
 }
