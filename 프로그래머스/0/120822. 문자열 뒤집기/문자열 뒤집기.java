@@ -2,12 +2,11 @@ class Solution {
     public String solution(String my_string) {
         String answer = "";
         
-        String arr[] = my_string.split("");
+        StringBuilder sb = new StringBuilder();
+        sb.append(my_string);
+        sb.reverse();
         
-        for(int i=0; i<my_string.length(); i++) {
-            answer += arr[arr.length-i-1];
-        }
-        
+        answer += sb;
         return answer;
     }
 }
