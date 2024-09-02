@@ -6,15 +6,15 @@ public class Main {
         
         int n = scanner.nextInt();
         int m = scanner.nextInt();
-        int k[] = new int[n];
+        int arr[] = new int[n];
         
-        for(int i=0; i<k.length; i++) {
-            k[i] = scanner.nextInt();
+        for(int i=0; i<arr.length; i++) {
+            arr[i] = scanner.nextInt();
         }
         
-        for(int j=0; j<k.length; j++) {
-            if(k[j] < m) {
-                System.out.print(k[j] + " ");
+        for(int i=0; i<arr.length; i++) {
+            if(arr[i] < m) {
+                System.out.print(arr[i] + " ");
             }
         }
     }
