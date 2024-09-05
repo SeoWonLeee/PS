@@ -4,7 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();  
-        while (t-- > 0) {
+
+        while (t > 0) {
+            t--;
             int n = scanner.nextInt();  
             int m = scanner.nextInt();  
 
@@ -18,6 +20,7 @@ public class Main {
             while (!queue.isEmpty()) {
                 Paper current = queue.poll();
                 boolean hasHigherPriority = false;
+
                 for (Paper paper : queue) {
                     if (paper.priority > current.priority) {
                         hasHigherPriority = true;
